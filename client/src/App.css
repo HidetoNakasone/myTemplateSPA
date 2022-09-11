@@ -1,0 +1,28 @@
+
+#products {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-gap: 50px;
+  padding: 50px;
+  overflow: hidden;
+
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.product-info {
+  background-color: rgb(255, 255, 255);
+  box-shadow: -5px 8px 15px -2px rgba(31, 86, 150, 0.2);
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.product-info > p {
+  line-height: 20px;
+  margin: 10px 0;
+  color: rgb(80, 80, 80);
+}
+
+.product-info > p > .product-label {
+  color: rgb(86, 143, 189);
+  font-weight: bold;
+}
