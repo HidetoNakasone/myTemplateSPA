@@ -44,7 +44,8 @@ def init():
 def index():
   all_products = Product.query.all()
   products_schema = ProductSchema(many=True)
-  return products_schema.dump(all_products)
+  result = products_schema.dump(all_products)
+  return jsonify(result)
 
 
 if __name__ == '__main__':
